@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Flexbox Manipulation</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="black-box" id="blackBox">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+
+            <div class="controls">
+                <h3>Justify Content:</h3>
+                <button onclick="setJustifyContent('flex-start')">
+                    Flex Start
+                </button>
+                <button onclick="setJustifyContent('center')">Center</button>
+                <button onclick="setJustifyContent('flex-end')">
+                    Flex End
+                </button>
+                <button onclick="setJustifyContent('space-between')">
+                    Space Between
+                </button>
+                <button onclick="setJustifyContent('space-around')">
+                    Space Around
+                </button>
+                <button onclick="setJustifyContent('space-evenly')">
+                    Space Evenly
+                </button>
+
+                <h3>Align Items:</h3>
+                <button onclick="setAlignItems('flex-start')">
+                    Flex Start
+                </button>
+                <button onclick="setAlignItems('center')">Center</button>
+                <button onclick="setAlignItems('flex-end')">Flex End</button>
+                <button onclick="setAlignItems('stretch')">Stretch</button>
+
+                <h3>Flex Direction:</h3>
+                <button onclick="setFlexDirection('row')">Row</button>
+                <button onclick="setFlexDirection('row-reverse')">
+                    Row Reverse
+                </button>
+                <button onclick="setFlexDirection('column')">Column</button>
+                <button onclick="setFlexDirection('column-reverse')">
+                    Column Reverse
+                </button>
+            </div>
+        </div>
+        
+        <div class="status-box">
+            <h3>Current Settings:</h3>
+            <p>
+                <strong>Justify Content:</strong>
+                <span id="justifyContentStatus">center</span>
+            </p>
+            <p>
+                <strong>Align Items:</strong>
+                <span id="alignItemsStatus">center</span>
+            </p>
+            <p>
+                <strong>Flex Direction:</strong>
+                <span id="flexDirectionStatus">row</span>
+            </p>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
 </html>
