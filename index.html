@@ -8,13 +8,32 @@
     </head>
     <body>
         <div class="container">
-            <div class="black-box" id="blackBox">
-                <div class="item">1</div>
-                <div class="item">2</div>
-                <div class="item">3</div>
+            <div class="left child">
+
+                <div class="black-box" id="blackBox">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                </div>
+    
+                <div class="status-box">
+                    <h3>Current Settings:</h3>
+                    <p>
+                        <strong>Justify Content:</strong>
+                        <span id="justifyContentStatus">center</span>
+                    </p>
+                    <p>
+                        <strong>Align Items:</strong>
+                        <span id="alignItemsStatus">center</span>
+                    </p>
+                    <p>
+                        <strong>Flex Direction:</strong>
+                        <span id="flexDirectionStatus">row</span>
+                    </p>
+                </div>
             </div>
 
-            <div class="controls">
+            <div class="controls child">
                 <h3>Justify Content:</h3>
                 <button onclick="setJustifyContent('flex-start')">
                     Flex Start
@@ -51,22 +70,6 @@
                     Column Reverse
                 </button>
             </div>
-        </div>
-        
-        <div class="status-box">
-            <h3>Current Settings:</h3>
-            <p>
-                <strong>Justify Content:</strong>
-                <span id="justifyContentStatus">center</span>
-            </p>
-            <p>
-                <strong>Align Items:</strong>
-                <span id="alignItemsStatus">center</span>
-            </p>
-            <p>
-                <strong>Flex Direction:</strong>
-                <span id="flexDirectionStatus">row</span>
-            </p>
         </div>
 
         <script src="scripts.js"></script>
